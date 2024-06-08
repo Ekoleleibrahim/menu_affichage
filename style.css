@@ -5,7 +5,11 @@
 }
 body{
     padding: 100px;
-    background-color: rgb(107, 129, 209);
+    background-color: rgb(182, 194, 235);
+}
+img{
+    height: 15px;
+    object-fit: cover;
 }
 ul{
     list-style: none;
@@ -25,6 +29,9 @@ button{
     padding: 5px 16px;
     text-align: left;
     background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 button:hover{
     background-color: #eae8e8;
