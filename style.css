@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 100px;
+    background-color: rgb(107, 129, 209);
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 200px;
+    height: 100%;
+    margin: auto;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+}
+button{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 5px 16px;
+    text-align: left;
+    background-color: transparent;
+}
+button:hover{
+    background-color: #eae8e8;
+    border-radius: 3px;
+}
+ul li{
+    padding: 5px;
+}
+.sous-menu{
+    max-width: 280px;
+    width: 280px;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 1px #000;
+    border-radius: 5px;
+    display: none;
+}
+.sous-menu li:hover{
+    background-color: #eae8e8;
+    border-radius: 2px;
+}
+.open-menu1, 
+.open-menu2,
+.open-menu3{
+    position: relative;
+}
+.menu1,
+.menu2,
+.menu3{
+    position: absolute;
+    top: 5px;
+    left: 190px;
+    z-index: 99;
+}
+
+.open-menu1:hover .menu1,.open-menu2:hover .menu2,.open-menu3:hover .menu3{
+    display: block;
+}
+
+@media (max-width: 785px) {
+    .menu1,
+    .menu2,
+    .menu3{
+        position: absolute;
+        top: 15px;
+        left: 70px;
+}
+}
+@media (max-width: 532px) {
+    .menu1,
+    .menu2,
+    .menu3{
+        position: absolute;
+        top: 26px;
+        left: 0;
+}
+}
+
+@media (max-width: 400px) {
+    body{
+        padding: 100px 20px;
+    }
+    .container{
+        width: 70%;
+        
+    }
+    .sous-menu{
+        max-width: 280px;
+        width: 100%;
+        padding: 5px;
+        background-color: #fff;
+        box-shadow: 0 0 1px 1px #0000005d;
+        border-radius: 5px;
+        display: none;
+    }
+}
+@media (max-width: 304px) {
+    .container{
+        width: 90%;
+        
+    }
+}
+@media (max-width: 247px) {
+    .container{
+        width: 100%;
+        
+    }
+}
